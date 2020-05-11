@@ -27,7 +27,7 @@ function Home() {
                     </div>
                   </div>
                 </h1>
-                <h1> I'm Pierre,</h1>
+                <h1>I'm Pierre,</h1>
                 <h1>software developer</h1>
               </span>
               <span class="text__first-bg"></span>
@@ -36,13 +36,12 @@ function Home() {
             <span class="text__second">
               <h2>
                 <span class="text__word second-word">
-                  Full Stack Developer / React Expert / Freelancer
+                  Full Stack Development / React Expert / Freelancer
                 </span>
               </h2>
               <span class="text__second-bg"></span>
             </span>
           </p>
-
           <button class="btn btn-gradient">CONTACT ME</button>
         </div>
       </div>
