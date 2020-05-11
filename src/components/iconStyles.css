@@ -1,0 +1,119 @@
+.icon.about:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+  font-style: normal;
+}
+.icon.about:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease-out;
+  content: "ABOUT";
+  font-family: "Lucida Console", Monaco, monospace;
+  speak: none;
+  font-size: 0.5em;
+  font-style: normal;
+  font-weight: lighter;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+.icon.home:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f015";
+  font-style: normal;
+}
+.icon.home:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease-out;
+  content: "HOME";
+  font-family: "Lucida Console", Monaco, monospace;
+  speak: none;
+  font-size: 0.5em;
+  font-style: normal;
+  font-weight: lighter;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+.icon.work:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f06e";
+  font-style: normal;
+}
+.icon.work:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease-out;
+  content: "WORK";
+  font-family: "Lucida Console", Monaco, monospace;
+  speak: none;
+  font-size: 0.5em;
+  font-style: normal;
+  font-weight: lighter;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+.icon.contact:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0e0";
+  font-style: normal;
+}
+.icon.contact:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease-out;
+  content: "CONTACT";
+  font-family: "Lucida Console", Monaco, monospace;
+  speak: none;
+  font-size: 0.5em;
+  font-style: normal;
+  font-weight: lighter;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+.icon.skills:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f080";
+  font-style: normal;
+}
+.icon.skills:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease-out;
+  content: "SKILLS";
+  font-family: "Lucida Console", Monaco, monospace;
+  speak: none;
+  font-size: 0.5em;
+  font-style: normal;
+  font-weight: lighter;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+}
