@@ -3,16 +3,6 @@ import React from "react";
 function Background() {
   window.addEventListener("load", windowLoadHandler, false);
 
-  //for debug messages while testing code
-  var Debugger = function() {};
-  Debugger.log = function(message) {
-    try {
-      console.log(message);
-    } catch (exception) {
-      return;
-    }
-  };
-
   function windowLoadHandler() {
     canvasApp();
   }
@@ -22,11 +12,6 @@ function Background() {
     var context = displayCanvas.getContext("2d");
     var displayWidth = displayCanvas.width;
     var displayHeight = displayCanvas.height;
-
-    var exportCanvas = document.createElement("canvas");
-    exportCanvas.width = displayWidth;
-    exportCanvas.height = displayHeight;
-    var exportCanvasContext = exportCanvas.getContext("2d");
 
     var numCircles;
     var maxMaxRad;
@@ -69,7 +54,6 @@ function Background() {
 
     function setCircles() {
       var i;
-      var r, g, b, a;
       var maxR, minR;
       var grad;
       circles = [];
@@ -104,13 +88,11 @@ function Background() {
       var point1, point2;
       var x0, y0;
       var cosParam;
-
       var xSqueeze = 0.75;
       var yOffset;
 
       for (j = 0; j < drawsPerFrame; j++) {
         drawCount++;
-
         for (i = 0; i < numCircles; i++) {
           c = circles[i];
           c.param += c.changeSpeed;
@@ -121,7 +103,6 @@ function Background() {
             c.pointList2 = setLinePoints(iterations);
           }
           cosParam = 0.5 - 0.5 * Math.cos(Math.PI * c.param);
-
           context.strokeStyle = c.color;
           context.lineWidth = lineWidth;
           context.beginPath();
@@ -129,7 +110,6 @@ function Background() {
           point2 = c.pointList2.first;
 
           c.phase += 0.0002;
-
           var theta = c.phase;
           rad =
             c.minRad +
@@ -143,7 +123,6 @@ function Background() {
             clearInterval(timer);
             timer = null;
           }
-
           context.setTransform(
             xSqueeze,
             0,
@@ -184,9 +163,6 @@ function Background() {
       var point;
       var nextPoint;
       var dx, newX, newY;
-      var ratio;
-
-      var minRatio = 0.5;
 
       pointList.first.next = lastPoint;
       for (var i = 0; i < iterations; i++) {
@@ -200,21 +176,18 @@ function Background() {
           newY += dx * (Math.random() * 2 - 1);
 
           var newPoint = { x: newX, y: newY };
-
           if (newY < minY) {
             minY = newY;
           } else if (newY > maxY) {
             maxY = newY;
           }
-
           newPoint.next = nextPoint;
           point.next = newPoint;
-
           point = nextPoint;
         }
       }
 
-      if (maxY != minY) {
+      if (maxY !== minY) {
         var normalizeRate = 1 / (maxY - minY);
         point = pointList.first;
         while (point != null) {
@@ -228,62 +201,7 @@ function Background() {
           point = point.next;
         }
       }
-
       return pointList;
-    }
-
-    function exportPressed(evt) {
-      exportCanvasContext.fillStyle = bgColor;
-      exportCanvasContext.fillRect(0, 0, displayWidth, displayHeight);
-
-      exportCanvasContext.drawImage(
-        displayCanvas,
-        0,
-        0,
-        displayWidth,
-        displayHeight,
-        0,
-        0,
-        displayWidth,
-        displayHeight
-      );
-
-      exportCanvasContext.fillStyle = urlColor;
-      exportCanvasContext.font =
-        "bold italic 16px Helvetica, Arial, sans-serif";
-      exportCanvasContext.textBaseline = "top";
-      var metrics = exportCanvasContext.measureText("rectangleworld.com");
-      exportCanvasContext.fillText(
-        "rectangleworld.com",
-        displayWidth - metrics.width - 10,
-        5
-      );
-
-      var dataURL = exportCanvas.toDataURL("image/png");
-      var imageWindow = window.open(
-        "",
-        "fractalLineImage",
-        "left=0,top=0,width=" +
-          displayWidth +
-          ",height=" +
-          displayHeight +
-          ",toolbar=0,resizable=0"
-      );
-      imageWindow.document.write("<title>Export Image</title>");
-      imageWindow.document.write(
-        "<img id='exportImage'" +
-          " alt=''" +
-          " height='" +
-          displayHeight +
-          "'" +
-          " width='" +
-          displayWidth +
-          "'" +
-          " style='position:absolute;left:0;top:0'/>"
-      );
-      imageWindow.document.close();
-      var exportImage = imageWindow.document.getElementById("exportImage");
-      exportImage.src = dataURL;
     }
   }
 

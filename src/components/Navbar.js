@@ -8,63 +8,87 @@ import Github from "../icons/social/Github";
 import Instagram from "../icons/social/Instagram";
 import Linkedin from "../icons/social/Linkedin";
 
+import About from "./dropmenu/About";
+import Skills from "./dropmenu/About";
+import Work from "./dropmenu/About";
+import Contact from "./dropmenu/About";
+
 function navbar() {
   return (
-    <div id="nav_bar">
-      <a className="logo" rel="index" href="https://www.pierregober.com">
-        <img
-          className="logo_pic"
-          src="https://i.imgur.com/QQqDVej.png"
-          alt="Software Developer Logo, Full Stack Software Engineer Logo"
-        />
-      </a>
-      <nav className="en">
-        <a
-          rel="index"
-          href="https://www.pierregober.com"
-          className="home-link active"
-        >
-          <i className="icon home"></i>
+    <>
+      <div id="nav_bar">
+        <a className="logo" rel="index" href="https://www.pierregober.com">
+          <img
+            className="logo_pic"
+            src="https://i.imgur.com/QQqDVej.png"
+            alt="Software Developer Logo, Full Stack Software Engineer Logo"
+          />
         </a>
-        <a rel="about" href="https://pierregober.com/about/">
-          <i className="icon about"></i>
-        </a>
-        <a rel="skills" href="https://pierregober.com/skills/">
-          <i className="icon skills"></i>
-        </a>
-        <a rel="gallery" href="https://pierregober.com/portfolio/">
-          <i className="icon work"></i>
-        </a>
-        <a rel="contact" href="https://pierregober.com/contact/">
-          <i className="icon contact"></i>
-        </a>
-      </nav>
-      <ul>
-        <li>
-          <a href="https://github.com/pierregober" target="_blank">
-            <Github />
+        <nav className="en">
+          <a
+            rel="index"
+            href="https://www.pierregober.com"
+            className="home-link active"
+          >
+            <i className="icon home"></i>
           </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/pierregober/" target="_blank">
-            <Linkedin />
+          <a rel="about" href="https://pierregober.com/about/">
+            <i className="icon about"></i>
           </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/pierregober" target="_blank">
-            <Facebook />
+          <About />
+          <a rel="skills" href="https://pierregober.com/skills/">
+            <i className="icon skills"></i>
           </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/pierrethetruth/" target="_blank">
-            <Instagram />
+          <a rel="gallery" href="https://pierregober.com/portfolio/">
+            <i className="icon work"></i>
           </a>
-        </li>
-      </ul>
-      <a id="mobile-link" href>
-        <i className="fa fa-bars" />
-      </a>
-    </div>
+          <a rel="contact" href="https://pierregober.com/contact/">
+            <i className="icon contact"></i>
+          </a>
+        </nav>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/pierregober"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/pierregober/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/pierregober"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Facebook />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/pierrethetruth/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram />
+            </a>
+          </li>
+        </ul>
+        <a id="mobile-link" href>
+          <i className="fa fa-bars" />
+        </a>
+      </div>
+    </>
   );
 }
 export default navbar;
