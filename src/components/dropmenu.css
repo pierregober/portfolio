@@ -9,10 +9,11 @@
   max-height: 300px;
   position: fixed;
   overflow: hidden;
-  z-index: 2400;
+  z-index: 1;
   opacity: 0.7;
   margin: 0;
   padding: 5px;
+  display: flex;
 }
 
 .dropdown-case {
@@ -21,4 +22,175 @@
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px 0px;
   background-color: #fff;
   padding: 0px 3px 3px 0px;
+}
+
+/* Console text*/
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 80vw;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -o-animation: bringup 2s linear reverse forwards;
+  -moz-animation: bringup 2s linear reverse forwards;
+  -webkit-animation: bringup 2s linear reverse forwards;
+  animation: bringup 2s linear reverse forwards;
+  overflow: hidden;
+  letter-spacing: 2px;
+
+  width: 100%;
+  will-change: contents;
+  position: absolute;
+  top: 23%;
+  z-index: 1 !important;
+  transform-style: preserve-3d;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+@keyframes bringup {
+  0% {
+    background-color: rgba(0, 20, 0, 0.3);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.shrink {
+  position: absolute;
+  top: 60px;
+  left: 265px;
+  text-align: center;
+  font-size: 30px;
+  color: transparent;
+  -o-animation: shrink 1.5s linear forwards 2s;
+  -moz-animation: shrink 1.5s linear forwards 2s;
+  -webkit-animation: shrink 1.5s linear forwards 2s;
+  animation: shrink 1.5s linear forwards 2s;
+}
+@keyframes shrink {
+  0% {
+    text-shadow: 0px 0px 80px #0f0;
+  }
+  100% {
+    text-shadow: 1px 1px 1px #0f0;
+  }
+}
+.eat,
+.sleep,
+.rave,
+.repeat {
+  position: absolute;
+  top: 100px;
+  left: 267px;
+  font-size: 30px;
+  color: transparent;
+  -o-animation: shrink 1.5s linear forwards 3s;
+  -moz-animation: shrink 1.5s linear forwards 3s;
+  -webkit-animation: shrink 1.5s linear forwards 3s;
+  animation: shrink 1.5s linear forwards 3s;
+}
+.sleep {
+  top: 140px;
+  -o-animation: shrink 1.5s linear forwards 3.2s;
+  -moz-animation: shrink 1.5s linear forwards 3.2s;
+  -webkit-animation: shrink 1.5s linear forwards 3.2s;
+  animation: shrink 1.5s linear forwards 3.2s;
+}
+.rave {
+  top: 180px;
+  -o-animation: shrink 1.5s linear forwards 3.4s;
+  -moz-animation: shrink 1.5s linear forwards 3.4s;
+  -webkit-animation: shrink 1.5s linear forwards 3.4s;
+  animation: shrink 1.5s linear forwards 3.4s;
+}
+.repeat {
+  top: 220px;
+  -o-animation: shrink 1.5s linear forwards 3.6s;
+  -moz-animation: shrink 1.5s linear forwards 3.6s;
+  -webkit-animation: shrink 1.5s linear forwards 3.6s;
+  animation: shrink 1.5s linear forwards 3.6s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes roll {
+  0% {
+    background-position: right 0 top 0;
+  }
+  100% {
+    background-position: right 0 top -146px;
+  }
+}
+
+/* skills image grid*/
+
+.image-grid div {
+  width: 25%;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image01 {
+  background-image: url("https://i7.pngflow.com/pngimage/117/744/png-node-js-javascript-express-js-software-developer-react-network-code-angle-text-rectangle-logo-clipart.png");
+}
+.image02 {
+  background-image: url("https://p1.hiclipart.com/preview/951/574/485/react-logo-javascript-redux-vuejs-angular-angularjs-expressjs-front-and-back-ends-png-clipart.jpg");
+}
+.image03 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png");
+}
+.image04 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png");
+}
+.image05 {
+  background-image: url("https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png");
+}
+.image06 {
+  background-image: url("https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png");
+}
+.image07 {
+  background-image: url("https://stickykart.com/wp-content/uploads/2018/08/redux.png");
+}
+.image08 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-08.jpg");
+}
+.image09 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-09.jpg");
+}
+.image10 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-10.jpg");
+}
+.image11 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-11.jpg");
+}
+.image12 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-12.jpg");
+}
+
+@media screen and (max-width: 400px) {
+  .image-grid {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+  .image-grid div {
+    width: 100%;
+  }
 }

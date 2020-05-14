@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 
 import "./navbar.css";
 import "./iconStyles.css";
@@ -9,48 +9,7 @@ import Github from "../icons/social/Github";
 import Instagram from "../icons/social/Instagram";
 import Linkedin from "../icons/social/Linkedin";
 
-import About from "./dropmenu/About";
-import Contact from "./dropmenu/About";
-import Skills from "./dropmenu/About";
-import Work from "./dropmenu/About";
-
 function Navbar() {
-  const [showAbout, setShowAbout] = useState(false);
-  const [showContact, setShowContact] = useState(false);
-  const [showSkills, setShowSkills] = useState(false);
-  const [showWork, setShowWork] = useState(false);
-
-  const aboutRef = useRef();
-  const contactRef = useRef();
-  const skillsRef = useRef();
-  const workRef = useRef();
-
-  useEffect(() => {
-    function monitorMouse({ target }) {
-      if (showAbout && !aboutRef.current.contains(target)) {
-        setShowAbout(false);
-      }
-      if (showContact && !contactRef.current.contains(target)) {
-        setShowContact(false);
-      }
-      if (showSkills && !skillsRef.current.contains(target)) {
-        setShowSkills(false);
-      }
-      if (showWork && !workRef.current.contains(target)) {
-        setShowWork(false);
-      }
-    }
-  }, [
-    setShowAbout,
-    setShowContact,
-    setShowSkills,
-    setShowWork,
-    showAbout,
-    showContact,
-    showSkills,
-    showWork
-  ]);
-
   return (
     <>
       <div id="nav_bar">
@@ -62,7 +21,7 @@ function Navbar() {
           />
         </a>
         <nav className="en">
-          <a rel="index" href="/home" className="home-link active">
+          <a rel="index" href="/home" className="home-link">
             <i className="icon home"></i>
           </a>
           <a rel="about" href="/about">
@@ -117,11 +76,10 @@ function Navbar() {
             </a>
           </li>
         </ul>
-        <a id="mobile-link" href>
+        <a id="mobile-link" href="#">
           <i className="fa fa-bars" />
         </a>
       </div>
-      {showAbout && <About />}
     </>
   );
 }

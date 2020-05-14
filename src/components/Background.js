@@ -22,7 +22,6 @@ function Background() {
     var timer;
     var drawsPerFrame;
     var drawCount;
-    var bgColor, urlColor;
     var TWO_PI = 2 * Math.PI;
     var lineWidth;
 
@@ -35,8 +34,6 @@ function Background() {
       minRadFactor = 0.1;
       iterations = 10;
       drawsPerFrame = 8;
-      bgColor = "#FFFFFF";
-      urlColor = "#EEEEEE";
       lineWidth = 1.01;
       startGenerate();
     }
