@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
+import logoSubject from '@/images/logos/subject.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
+import logoLAPathways from '@/images/logos/la-pathways.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
@@ -32,18 +32,21 @@ const projects = [
     logo: logoHelioStream,
   },
   {
-    name: 'cosmOS',
+    name: 'Subject',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+      'An accredited learning platform designed to deliver quality education to learners everywhere.',
+    link: { href: 'https://www.subject.com', label: 'subject.com' },
+    logo: logoSubject,
   },
   {
-    name: 'OpenShuttle',
+    name: 'LA Pathways',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'Services include business coaching, access to capital, procurement and contracting, license and permitting, among others. This tool is for information only.',
+    link: {
+      href: 'https://lapathway.azurewebsites.net/explore',
+      label: 'lacity.org',
+    },
+    logo: logoLAPathways,
   },
 ]
 

@@ -11,10 +11,12 @@ import {
   InstagramIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
+import logoLAPathways from '@/images/logos/la-pathways.svg'
 import logoHarvard from '@/images/logos/school/harvard.svg'
 import logoPennState from '@/images/logos/school/pennstate.svg'
-import logoAirbnb from '@/images/logos/airbnb.svg'
+import logoAWS from '@/images/logos/aws.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
+import logoLSGS from '@/images/logos/lsgs.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/image-1.jpg'
@@ -202,7 +204,7 @@ function Resume() {
     {
       company: 'McKinsey & Company',
       title: 'Software Engineer',
-      logo: logoAirbnb,
+      logo: logoAWS,
       start: '2022',
       end: '2022',
     },
@@ -216,21 +218,21 @@ function Resume() {
     {
       company: 'Amazon',
       title: 'Software Development Engineer',
-      logo: logoStarbucks,
+      logo: logoAWS,
       start: '2021',
       end: '2021',
     },
     {
       company: 'Loyal Source Government Services',
       title: 'Software Developer',
-      logo: logoStarbucks,
+      logo: logoLSGS,
       start: '2020',
       end: '2021',
     },
     {
       company: 'City of Los Angeles',
       title: 'Full Stack Software Engineer',
-      logo: logoStarbucks,
+      logo: logoLAPathways,
       start: '2019',
       end: '2020',
     },
@@ -373,7 +375,7 @@ function Certs() {
     {
       company: 'Cloud Practitioner',
       title: 'Amazon Web Services',
-      logo: logoHarvard,
+      logo: logoAWS,
       date: '2021',
     },
     {
