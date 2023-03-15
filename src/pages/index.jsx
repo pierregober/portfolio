@@ -13,7 +13,14 @@ import {
 } from '@/components/SocialIcons'
 import logoLAPathways from '@/images/logos/la-pathways.svg'
 import logoHarvard from '@/images/logos/school/harvard.svg'
+import logoScrumAlliance from '@/images/logos/scrum-alliance.svg'
 import logoPennState from '@/images/logos/school/pennstate.svg'
+import logoMircosoft from '@/images/logos/microsoft.svg'
+import logoCleverlyDone from '@/images/logos/cd.svg'
+import logoSubject from '@/images/logos/subject.svg'
+import logoUSMC from '@/images/logos/usmc.svg'
+import logoTechMD from '@/images/logos/techmd.svg'
+import logoMCK from '@/images/logos/mck.svg'
 import logoAWS from '@/images/logos/aws.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoLSGS from '@/images/logos/lsgs.svg'
@@ -194,7 +201,7 @@ function Resume() {
     {
       company: 'CleverlyDone',
       title: 'Owner',
-      logo: logoPlanetaria,
+      logo: logoCleverlyDone,
       start: '2022',
       end: {
         label: 'Present',
@@ -204,14 +211,14 @@ function Resume() {
     {
       company: 'McKinsey & Company',
       title: 'Software Engineer',
-      logo: logoAWS,
+      logo: logoMCK,
       start: '2022',
       end: '2022',
     },
     {
       company: 'Subject',
       title: 'Software Engineer II',
-      logo: logoFacebook,
+      logo: logoSubject,
       start: '2021',
       end: '2022',
     },
@@ -239,14 +246,14 @@ function Resume() {
     {
       company: 'TechMD',
       title: 'Systems Analyst',
-      logo: logoStarbucks,
+      logo: logoTechMD,
       start: '2017',
       end: '2018',
     },
     {
       company: 'United States Marine Corps',
       title: 'Field Wireman',
-      logo: logoStarbucks,
+      logo: logoUSMC,
       start: '2013',
       end: '2017',
     },
@@ -381,19 +388,19 @@ function Certs() {
     {
       company: '70-480: Programming in HTML5 with JavaScript and CSS3',
       title: 'Microsoft',
-      logo: logoHarvard,
+      logo: logoMircosoft,
       date: '2020',
     },
     {
       company: 'Certified Scrum Master',
       title: 'Scrum Alliance',
-      logo: logoHarvard,
+      logo: logoScrumAlliance,
       date: '2020',
     },
     {
       company: 'Certified Scrum Product Owner',
       title: 'Scrum Alliance',
-      logo: logoHarvard,
+      logo: logoScrumAlliance,
       date: '2020',
     },
   ]
@@ -461,7 +468,7 @@ function Photos() {
   )
 }
 
-export default function Home({ articles }) {
+export default function Home() {
   return (
     <>
       <Head>

@@ -18,10 +18,10 @@ const projects = [
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'AfterAction',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      'Utilizing machine learning & natural language processing, teams that adopt agile project management can improve their retrospective process.',
+    link: { href: 'https://www.afteraction.ai', label: 'afteraction.ai' },
     logo: logoAnimaginary,
   },
   {
