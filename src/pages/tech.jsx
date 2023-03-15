@@ -122,6 +122,14 @@ export default function Tech() {
               infrastructure that Google uses internally for its end-user
               products, such as Google Search and YouTube.
             </Tool>
+            <Tool title="Netlify">
+              A cloud computing company that offers hosting and serverless
+              backend services for static websites.
+            </Tool>
+            <Tool title="Strapi">
+              A free and open-source headless CMS delivering your content
+              anywhere you need.
+            </Tool>
             <Tool title="Auth0">
               A cloud-based software-as-a-service (SaaS) platform for
               authentication and authorization.
