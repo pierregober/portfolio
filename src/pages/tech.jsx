@@ -40,6 +40,97 @@ export default function Tech() {
         intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
       >
         <div className="space-y-20">
+          <ToolsSection title="Frontend">
+            <Tool title="React">
+              A JavaScript library developed by Facebook for building user
+              interfaces
+            </Tool>
+            <Tool title="Typescript">
+              Provides several advantages in application-building, including the
+              option of simpler React components and better JavaScript XML (JSX)
+              support for static type validation.
+            </Tool>
+            <Tool title="Python">
+              An interpreted, high-level, general-purpose programming language.
+            </Tool>
+            <Tool title="HTML">
+              The standard markup language for creating web pages and web
+            </Tool>
+            <Tool title="CSS">
+              A style sheet language used for describing the presentation of a
+              document written in a markup language like HTML
+            </Tool>
+            <Tool title="Redux">
+              A predictable state container for JavaScript apps
+            </Tool>
+            <Tool title="SCSS">
+              A style sheet language used for describing the presentation of a
+              document written in a markup language like HTML but in a more
+              powerful way.
+            </Tool>
+          </ToolsSection>
+          <ToolsSection title="Backend">
+            <Tool title="Node">
+              {` A JavaScript runtime built on Chrome's V8 JavaScript engine.`}
+            </Tool>
+            <Tool title="Express">
+              A minimal and flexible Node.js web application framework that
+              provides a robust set of features for web and mobile applications.
+            </Tool>
+          </ToolsSection>
+          <ToolsSection title="Database">
+            <Tool title="DynamoDB (NoSQL)">
+              A key-value and document database that delivers single-digit
+              millisecond performance at any scale.
+            </Tool>
+            <Tool title="Postgres (SQL)">
+              A powerful, open source object-relational database system with
+              over 30 years of active development that has earned it a strong
+              reputation for reliability, feature robustness, and performance.
+            </Tool>
+          </ToolsSection>
+          <ToolsSection title="DevOps">
+            <Tool title="Serverless Framework (FaaS)">
+              A free and open-source web framework written using Node.js. It is
+              designed to build scalable applications, with a focus on
+              serverless, microservices and distributed systems.
+            </Tool>
+            <Tool title="Docker">
+              A set of platform as a service (PaaS) products that use OS-level
+              virtualization to deliver software in packages called containers.
+            </Tool>
+            <Tool title="Kubernetes">
+              An open-source system for automating deployment, scaling, and
+              management of containerized applications.
+            </Tool>
+          </ToolsSection>
+          <ToolsSection title="Other Software">
+            <Tool title="AWS">
+              A comprehensive, evolving cloud computing platform; it provides a
+              suite of cloud-computing services that make up an on-demand
+              computing platform.
+            </Tool>
+            <Tool title="Auth0">
+              A cloud-based software-as-a-service (SaaS) platform for
+              authentication and authorization.
+            </Tool>
+            <Tool title="Stripe">
+              A suite of payment APIs that powers commerce for online businesses
+              of all sizes, including fraud prevention, and subscription
+              management.
+            </Tool>
+            <Tool title="Storybook">
+              An open source tool for developing UI components in isolation.
+            </Tool>
+            <Tool title="Jest">
+              A delightful JavaScript Testing Framework with a focus on
+              simplicity.
+            </Tool>
+            <Tool title="Testing Library">
+              Simple and complete testing utilities that encourage good testing
+              practices.
+            </Tool>
+          </ToolsSection>
           <ToolsSection title="Workstation">
             <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
               I was using an Intel-based 16” MacBook Pro prior to this and the
@@ -68,19 +159,9 @@ export default function Tech() {
             </Tool>
           </ToolsSection>
           <ToolsSection title="Development tools">
-            <Tool title="Sublime Text 4">
-              I don’t care if it’s missing all of the fancy IDE features
-              everyone else relies on, Sublime Text is still the best text
-              editor ever made.
-            </Tool>
-            <Tool title="iTerm2">
-              I’m honestly not even sure what features I get with this that
-              aren’t just part of the macOS Terminal but it’s what I use.
-            </Tool>
-            <Tool title="TablePlus">
-              Great software for working with databases. Has saved me from
-              building about a thousand admin interfaces for my various projects
-              over the years.
+            <Tool title="VS Code">
+              Was using ATOM until it hit the end of support... so this is a
+              good alternative.
             </Tool>
           </ToolsSection>
           <ToolsSection title="Design">
@@ -88,28 +169,6 @@ export default function Tech() {
               We started using Figma as just a design tool but now it’s become
               our virtual whiteboard for the entire company. Never would have
               expected the collaboration features to be the real hook.
-            </Tool>
-          </ToolsSection>
-          <ToolsSection title="Productivity">
-            <Tool title="Alfred">
-              It’s not the newest kid on the block but it’s still the fastest.
-              The Sublime Text of the application launcher world.
-            </Tool>
-            <Tool title="Reflect">
-              Using a daily notes system instead of trying to keep things
-              organized by topics has been super powerful for me. And with
-              Reflect, it’s still easy for me to keep all of that stuff
-              discoverable by topic even though all of my writing happens in the
-              daily note.
-            </Tool>
-            <Tool title="SavvyCal">
-              Great tool for scheduling meetings while protecting my calendar
-              and making sure I still have lots of time for deep work during the
-              week.
-            </Tool>
-            <Tool title="Focus">
-              Simple tool for blocking distracting websites when I need to just
-              do the work and get some momentum going.
             </Tool>
           </ToolsSection>
         </div>
