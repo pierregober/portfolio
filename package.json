@@ -11,6 +11,7 @@
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
     "@headlessui/react": "^1.7.8",
+    "@hookform/resolvers": "^2.9.11",
     "@mapbox/rehype-prism": "^0.8.0",
     "@mdx-js/loader": "^2.1.5",
     "@mdx-js/react": "^2.1.5",
@@ -25,8 +26,10 @@
     "postcss-focus-visible": "^6.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.5",
     "remark-gfm": "^3.0.1",
-    "tailwindcss": "^3.2.1"
+    "tailwindcss": "^3.2.1",
+    "yup": "^1.0.2"
   },
   "devDependencies": {
     "eslint": "8.26.0",

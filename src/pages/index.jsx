@@ -15,25 +15,25 @@ import logoLAPathways from '@/images/logos/la-pathways.svg'
 import logoHarvard from '@/images/logos/school/harvard.svg'
 import logoScrumAlliance from '@/images/logos/scrum-alliance.svg'
 import logoPennState from '@/images/logos/school/pennstate.svg'
-import logoMircosoft from '@/images/logos/microsoft.svg'
+import logoMicrosoft from '@/images/logos/microsoft.svg'
 import logoCleverlyDone from '@/images/logos/cd.svg'
 import logoSubject from '@/images/logos/subject.svg'
 import logoUSMC from '@/images/logos/usmc.svg'
 import logoTechMD from '@/images/logos/techmd.svg'
 import logoMCK from '@/images/logos/mck.svg'
 import logoAWS from '@/images/logos/aws.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
 import logoLSGS from '@/images/logos/lsgs.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
+
+import { useForm } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers/yup'
+import * as yup from 'yup'
 
 function MailIcon(props) {
   return (
@@ -167,17 +167,44 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
+const schema = yup
+  .object({
+    email: yup.string().required(),
+    message: yup.string().required(),
+  })
+  .required()
+
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
+
 function Newsletter() {
+  const { register, handleSubmit, watch } = useForm({
+    resolver: yupResolver(schema),
+  })
+
+  const sendMessage = () => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': 'portfolio-capture',
+        email: watch('email'),
+        message: watch('message'),
+      }).toString(),
+    })
+      .then(() => alert('it worked!'))
+      .catch((error) => alert(error))
+  }
+
   return (
     <form
       name="portfolio-capture"
       data-netlify="true"
-      method="POST"
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-      onSubmit={() => {
-        e.preventDefault()
-        return false
-      }}
+      onSubmit={handleSubmit(onSubmit)}
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
@@ -196,6 +223,7 @@ function Newsletter() {
             placeholder="Email address"
             aria-label="Email address"
             name="email"
+            {...register('email')}
             required
             className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
           />
@@ -206,6 +234,7 @@ function Newsletter() {
             placeholder="Say something nice..."
             aria-label="Message content"
             required
+            {...register('message')}
             className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
           />
         </div>
@@ -406,7 +435,7 @@ function Certs() {
     {
       company: '70-480: Programming in HTML5 with JavaScript and CSS3',
       title: 'Microsoft',
-      logo: logoMircosoft,
+      logo: logoMicrosoft,
       date: '2020',
     },
     {
