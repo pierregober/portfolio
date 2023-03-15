@@ -173,6 +173,7 @@ function Newsletter() {
       name="portfolio-capture"
       data-netlify="true"
       action="/"
+      method="POST"
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
       onSubmit={() => {
         e.preventDefault()
