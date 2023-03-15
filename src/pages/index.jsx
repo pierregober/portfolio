@@ -4,7 +4,6 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
@@ -195,7 +194,9 @@ function Newsletter() {
         message: watch('message'),
       }).toString(),
     })
-      .then(() => alert('it worked!'))
+      .then(() =>
+        alert('Message Sent! Thank you, I will get back to you soon ❤️')
+      )
       .catch((error) => alert(error))
   }
 
