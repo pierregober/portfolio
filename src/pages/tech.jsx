@@ -45,6 +45,9 @@ export default function Tech() {
               A JavaScript library developed by Facebook for building user
               interfaces
             </Tool>
+            <Tool title="React Native">
+              A JavaScript framework for building native mobile apps.
+            </Tool>
             <Tool title="Typescript">
               Provides several advantages in application-building, including the
               option of simpler React components and better JavaScript XML (JSX)
