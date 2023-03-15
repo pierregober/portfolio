@@ -52,6 +52,11 @@ export default function Document() {
         />
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
+        <form name="portfolio-capture" data-netlify="true" hidden>
+          <input aria-label="email" type="" name="email" />
+          <input aria-label="message" type="" name="message" />
+          <button type="submit">Submit</button>
+        </form>
         <Main />
         <NextScript />
       </body>
