@@ -180,15 +180,28 @@ function Newsletter() {
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
         Contact me for permanent, contract opportunities, or just to say hi.
       </p>
-      <div className="mt-6 flex">
-        <input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-        />
-        <Button type="submit" className="ml-4 flex-none">
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+        <div
+          className="mt-6 flex"
+          style={{ flexDirection: 'column', gap: '8px' }}
+        >
+          <input
+            type="email"
+            placeholder="Email address"
+            aria-label="Email address"
+            required
+            className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
+          />
+          <textarea
+            rows="5"
+            type="text"
+            placeholder="Say something nice..."
+            aria-label="Message content"
+            required
+            className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
+          />
+        </div>
+        <Button type="submit" className="flex-none" style={{ width: '100%' }}>
           Send
         </Button>
       </div>
@@ -313,7 +326,7 @@ function School() {
   let school = [
     {
       company: 'Harvard University',
-      title: 'ALM Digital Media Design',
+      title: 'ALM in Digital Media Design',
       logo: logoHarvard,
       start: '2022',
       end: {
@@ -323,7 +336,7 @@ function School() {
     },
     {
       company: 'Penn State University',
-      title: 'B.S. Information Sciences and Tech',
+      title: 'B.S. in Information Sciences and Technology',
       logo: logoPennState,
       start: '2019',
       end: '2021',
