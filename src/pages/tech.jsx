@@ -107,11 +107,20 @@ export default function Tech() {
               management of containerized applications.
             </Tool>
           </ToolsSection>
-          <ToolsSection title="Other Software">
-            <Tool title="AWS">
+          <ToolsSection title="Other">
+            <Tool title="Git">
+              A distributed version-control system for tracking changes in
+              source code during software development.
+            </Tool>
+            <Tool title="Amazon Web Services">
               A comprehensive, evolving cloud computing platform; it provides a
               suite of cloud-computing services that make up an on-demand
               computing platform.
+            </Tool>
+            <Tool title="Google Cloud Platform">
+              A suite of cloud computing services that runs on the same
+              infrastructure that Google uses internally for its end-user
+              products, such as Google Search and YouTube.
             </Tool>
             <Tool title="Auth0">
               A cloud-based software-as-a-service (SaaS) platform for
