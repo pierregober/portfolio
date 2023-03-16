@@ -73,17 +73,17 @@ export default function About() {
                 eventually learning to type on it. Later in high school I
                 learned how to solder and how to mod and repair my own custom
                 game consoles. I modded PSPs and sold them online on ebay. I’ve
-                probably gone through 25 or so PSPs in high school alone. And for
-                me I could never even afford one if I didn’t create my own job
-                modding them.
+                probably gone through 25 or so PSPs in high school alone. And
+                for me I could never even afford one if I didn’t create my own
+                job modding them.
               </p>
               <p>
                 After highschool I went to the United States Marine Corps. I
-                served for 4 years as a field wireman for the infantry unit 2nd Battalion 5th Marines. I learned a lot of things
-                that shaped me to the man I am today. I learned how to be a
-                leader, how to be a team player, how to work exceptionally well
-                in high pressure situations, and more importantly how to be a
-                problem solver.
+                served for 4 years as a field wireman for the infantry unit 2nd
+                Battalion 5th Marines. I learned a lot of things that shaped me
+                to the man I am today. I learned how to be a leader, how to be a
+                team player, how to work exceptionally well in high pressure
+                situations, and more importantly how to be a problem solver.
               </p>
               <p>
                 I transferred my skills learned in the military and applied them
@@ -124,7 +124,7 @@ export default function About() {
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="mailto:pierre@cleverlydone.com"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >

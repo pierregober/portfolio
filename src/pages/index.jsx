@@ -1,8 +1,13 @@
+// Vendor
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import { useForm } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers/yup'
+import * as yup from 'yup'
 
+// Custom Components
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import {
@@ -10,6 +15,8 @@ import {
   InstagramIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
+
+// Logos
 import logoLAPathways from '@/images/logos/la-pathways.svg'
 import logoHarvard from '@/images/logos/school/harvard.svg'
 import logoScrumAlliance from '@/images/logos/scrum-alliance.svg'
@@ -22,6 +29,8 @@ import logoTechMD from '@/images/logos/techmd.svg'
 import logoMCK from '@/images/logos/mck.svg'
 import logoAWS from '@/images/logos/aws.svg'
 import logoLSGS from '@/images/logos/lsgs.svg'
+
+// Homepage Images
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -29,10 +38,6 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
-
-import { useForm } from 'react-hook-form'
-import { yupResolver } from '@hookform/resolvers/yup'
-import * as yup from 'yup'
 
 function MailIcon(props) {
   return (
@@ -521,17 +526,23 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Pierre Gober - Software engineer, real estate enthusiast, avid learner
+          Pierre Gober - Software Engineer, Real Estate Enthusiast, Marine Corps
+          Veteran Avid Learner
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Pierre, a software engineer and entrepreneur based in Los
+          Angeles. I’m the CEO of CleverlyDone. We specialize in building
+          custom software solutions for organizations that are looking to make
+          a difference in the world. On my free time I enjoy learning about
+          real estate and investing."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software engineer, real estate enthusiast, avid learner
+            Software Engineer, Real Estate Enthusiast, Marine Corps Veteran Avid
+            Learner
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Pierre, a software engineer and entrepreneur based in Los
