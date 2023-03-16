@@ -8,7 +8,6 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
-  TwitterIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/me_and_doggo.PNG'
 
