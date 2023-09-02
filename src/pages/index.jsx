@@ -279,13 +279,6 @@ function Resume() {
       end: '2022',
     },
     {
-      company: 'Amazon',
-      title: 'Software Development Engineer',
-      logo: logoAWS,
-      start: '2021',
-      end: '2021',
-    },
-    {
       company: 'Loyal Source Government Services',
       title: 'Software Developer',
       logo: logoLSGS,
