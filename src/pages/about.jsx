@@ -65,37 +65,45 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved tech since a young age. I remember the first time I
-                got a computer. My grandma gave us a computer with a green
-                monochrome screen and a 5.25-inch floppy drive. I was 5 years
-                old. I spent hours playing with it, learning how to use it, and
-                eventually learning to type on it. Later in high school I
-                learned how to solder and how to mod and repair my own custom
-                game consoles. I modded PSPs and sold them online on ebay. I’ve
-                probably gone through 25 or so PSPs in high school alone. And
-                for me I could never even afford one if I didn’t create my own
-                job modding them.
+                Ever since I was a child, I&rsquo;ve had a deep passion for
+                technology. I still fondly recall the first computer I ever laid
+                hands on: a gift from my grandma, it featured a green monochrome
+                screen. At just 5 years old, I was captivated. I&rsquo;d spend
+                countless hours exploring its functionalities and eventually
+                teaching myself to type. As the years went by, my enthusiasm for
+                tech only grew. By high school, I was not just a user but a
+                modifier. I learned how to solder, which allowed me to modify
+                and repair custom game consoles. The PSP became my specialty. I
+                modded and sold them on eBay, cycling through over 25 of them
+                during my high school years. Without the profits from my savvy
+                side hustle, purchasing a PSP for myself would have been just
+                out of my grasp.
               </p>
               <p>
-                After highschool I went to the United States Marine Corps. I
-                served for 4 years as a field wireman for the infantry unit 2nd
-                Battalion 5th Marines. I learned a lot of things that shaped me
-                to the man I am today. I learned how to be a leader, how to be a
-                team player, how to work exceptionally well in high pressure
-                situations, and more importantly how to be a problem solver.
+                After high school, I proudly served in the United States Marine
+                Corps for four years, specifically as a field wireman for the
+                infantry unit 2nd Battalion, 5th Marines. During this time, I
+                faced challenges that honed my leadership, teamwork, and
+                problem-solving abilities, especially under high-pressure
+                situations. Through various deployments and training exercises,
+                I mastered the art of adaptability, always finding ways to
+                overcome unexpected challenges &mdash; a skill that I&apos;ve
+                carried with me and applied in every facet of my life since
+                then.
               </p>
               <p>
-                I transferred my skills learned in the military and applied them
-                to coding. I have also been very fortunate to have worked in
-                government, startup and bit tech settings. That has allowed me
-                to have a unique perspective on how to tackle issues.
+                Upon concluding my service, I found that the skills and
+                discipline I acquired in the Marines translated seamlessly into
+                the world of coding. I&apos;ve been fortunate to work across
+                diverse sectors - from government roles to startups and big tech
+                companies. These experiences have equipped me with a unique
+                perspective on addressing challenges.
               </p>
               <p>
-                Today, I’m the founder of CleverlyDone, a software development
-                company that helps your clients build the future of tech. We
-                specialize in building custom software solutions for
-                organizations that are looking to make a difference in the
-                world.
+                Today, I proudly lead CleverlyDone, a software development
+                company with a mission. We specialize in crafting custom
+                software solutions for organizations poised to make a
+                significant impact in the world.
               </p>
             </div>
           </div>
