@@ -1,11 +1,11 @@
 // Vendor
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import clsx from 'clsx'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
+import clsx from 'clsx'
+import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
 
 // Custom Components
 import { Button } from '@/components/Button'
@@ -17,27 +17,28 @@ import {
 } from '@/components/SocialIcons'
 
 // Logos
-import logoLAPathways from '@/images/logos/la-pathways.svg'
-import logoHarvard from '@/images/logos/school/harvard.svg'
-import logoScrumAlliance from '@/images/logos/scrum-alliance.svg'
-import logoPennState from '@/images/logos/school/pennstate.svg'
-import logoMicrosoft from '@/images/logos/microsoft.svg'
-import logoCleverlyDone from '@/images/logos/cd.svg'
-import logoSubject from '@/images/logos/subject.svg'
-import logoUSMC from '@/images/logos/usmc.svg'
-import logoTechMD from '@/images/logos/techmd.svg'
-import logoMCK from '@/images/logos/mck.svg'
 import logoAWS from '@/images/logos/aws.svg'
+import logoCleverlyDone from '@/images/logos/cd.svg'
+import logoHarvard from '@/images/logos/school/harvard.svg'
+import logoLAPathways from '@/images/logos/la-pathways.svg'
 import logoLSGS from '@/images/logos/lsgs.svg'
+import logoMCK from '@/images/logos/mck.svg'
+import logoMicrosoft from '@/images/logos/microsoft.svg'
+import logoPennState from '@/images/logos/school/pennstate.svg'
+import logoScrumAlliance from '@/images/logos/scrum-alliance.svg'
+import logoSubject from '@/images/logos/subject.svg'
+import logoTechMD from '@/images/logos/techmd.svg'
+import logoUSMC from '@/images/logos/usmc.svg'
+import logoBrainscape from '@/images/logos/bsc.png'
 
 // Homepage Images
+import { generateRssFeed } from '@/lib/generateRssFeed'
+import { getAllArticles } from '@/lib/getAllArticles'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
 
 function MailIcon(props) {
   return (
@@ -263,6 +264,13 @@ function Resume() {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
+    },
+    {
+      company: 'Brainscape',
+      title: 'Software Engineer II',
+      logo: logoBrainscape,
+      start: '2024',
+      end: '2024',
     },
     {
       company: 'McKinsey & Company',

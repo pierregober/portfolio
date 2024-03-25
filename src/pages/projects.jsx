@@ -1,19 +1,43 @@
+// Vendors
 import Head from 'next/head'
 import Image from 'next/image'
 
+// Custom Components
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
+
+// Assets
 import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoSubject from '@/images/logos/subject.svg'
+import logoBrainscape from '@/images/logos/bsc.png'
 import logoLAPathways from '@/images/logos/la-pathways.svg'
+import logoMCK from '@/images/logos/mck.svg'
+import logoSprintro from '@/images/logos/sprintro.svg'
+import logoSubject from '@/images/logos/subject.svg'
 
 const projects = [
   {
-    name: 'After Action',
+    name: 'Sprintro',
     description:
-      'Utilizing machine learning & natural language processing, teams that adopt agile project management can improve their retrospective process.',
-    link: { href: 'https://www.afteraction.ai', label: 'afteraction.ai' },
-    logo: logoAnimaginary,
+      'Navigate retros with predictive precision. Mitigate risks, streamline processes, and employ data-driven techniques.',
+    link: { href: 'https://www.sprintro.ai', label: 'sprintro.ai' },
+    logo: logoSprintro,
+  },
+  {
+    name: 'Brainscape',
+    description:
+      'Learning platform that uses an adaptive flashcards system based on cognitive science to improve learning efficiency and retention.',
+    link: { href: 'https://www.brainscape.com', label: 'brainscape.com' },
+    logo: logoBrainscape,
+  },
+  {
+    name: 'McKinsey & Company - CareCube',
+    description:
+      'Health analytics platform that surfaces real-time care model insights to improve quality and optimize medical spend in risk-based contracts',
+    link: {
+      href: 'https://www.mckinsey.com/industries/healthcare/how-we-help-clients/healthcare-analytics/overview/carecube',
+      label: 'mckinsey.com',
+    },
+    logo: logoMCK,
   },
   {
     name: 'Subject',
@@ -31,6 +55,13 @@ const projects = [
       label: 'lacity.org',
     },
     logo: logoLAPathways,
+  },
+  {
+    name: 'After Action',
+    description:
+      'Utilizing machine learning & natural language processing, teams that adopt agile project management can improve their retrospective process.',
+    link: { href: 'https://www.afteraction.ai', label: 'afteraction.ai' },
+    logo: logoAnimaginary,
   },
 ]
 
@@ -74,7 +105,9 @@ export default function Projects() {
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link target="_blank" href={project.link.href}>
+                  {project.name}
+                </Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
